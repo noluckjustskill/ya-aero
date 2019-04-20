@@ -5,6 +5,7 @@
 npm i
 npm start
 ```
+**NOTE** On first start, will init cached airports DB, to get new - tap on "Reload" button in interface.
 
 ### View
 Go to http://localhost:8080/
