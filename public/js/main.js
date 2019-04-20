@@ -35,7 +35,7 @@ const show = (data, filter) => {
 
       $('#schedule tbody').append(`<tr class="${flight.status === 'cancelled' ? 'red' : ''} ${delayed ? 'delayed' : ''}">
         <td><h2>${time}</h2><h3>${date}</h3></td>
-        <td>${delayed ? `<h2>${dTime}</h2><h3>${dDate}</h3>` : ''}</td>
+        <td><h2>${dTime}</h2><h3>${dDate}</h3></td>
         <td>${typeDict[flight.type] || flight.type}</td>
         <td>${data.cities[flight.departure.iataCode] || flight.departure.iataCode}</td>
         <td><h2>${flight.flight.iataNumber}</h2><h3>${flight.airline.name}</h3></td>
@@ -50,7 +50,7 @@ const show = (data, filter) => {
 
       $('#schedule tbody').append(`<tr class="${flight.status === 'cancelled' ? 'red' : ''}">
         <td><h2>${time}</h2><h3>${date}</h3></td>
-        <td></td>
+        <td><h2>${time}</h2><h3>${date}</h3></td>
         <td>${typeDict[flight.type] || flight.type}</td>
         <td>${data.cities[flight.arrival.iataCode] || flight.arrival.iataCode}</td>
         <td><h2>${flight.flight.iataNumber}</h2><h3>${flight.airline.name}</h3></td>

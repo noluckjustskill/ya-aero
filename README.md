@@ -11,3 +11,4 @@ npm start
 Go to http://localhost:8080/
 
 ![Example](https://i.imgur.com/fJG8skF.png)
+**NOTE** Free API does not allow me to filter delayed flights among departing, so this field will be ignored (in departing only).
