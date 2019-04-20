@@ -1,0 +1,5 @@
+{
+  "urlTable": "https://aviation-edge.com/v2/public/timetable?key=%key%&iataCode=%code%&type=%type%",
+  "key": "79881c-630b1f",
+  "iataCode": "SVO"
+}

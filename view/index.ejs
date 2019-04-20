@@ -1,0 +1,69 @@
+<!doctype html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Ya Aero</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+  <link rel="stylesheet" href="public/css/styles.css?v=1.0">
+
+  <script src="public/js/jquery.js"></script>
+  <script src="public/js/jquery.tablesorter.js"></script>
+  <script src="public/js/jquery.tablesorter.pager.js"></script>
+</head>
+
+<body>
+  <button id="reload" class="pure-button pure-button-primary">Reload</button>
+
+  <div id="wrapper">
+
+    <div id="control-bar">
+      <button class="type pure-button pure-button-active" data-type="arrival">Arrival</button>
+      <button class="type pure-button" data-type="departure">Departure</button>
+      <button class="delayed pure-button button-secondary">Delayed</button>
+    </div>
+
+    <div id="search-bar">
+      <input type="text" name="flight" id="flight" class="pure-input" placeholder="flight number" />
+      <button id="search" class="pure-button"><i class="fas fa-search"></i></button>
+      <button id="reset" class="pure-button pure-button-disabled">Reset</button>
+    </div>
+
+    <div style="clear:both"></div>
+
+    <div class="loader"></div>
+
+    <div id="content">
+      <table id="schedule" style="display: none">
+        <thead>
+          <tr>
+            <th>Time</th><th>Delayed</th><th>Type</th><th>City</th><th>Flight</th><th>Terminal</th><th>Status</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      
+      <div class="pager" style="display:none">
+        <img src="/public/img/first.png" class="first" />
+        <img src="/public/img/prev.png" class="prev" />
+        <span class="pagedisplay"></span>
+        <img src="/public/img/next.png" class="next" />
+        <img src="/public/img/last.png" class="last" />
+        <select class="pagesize" title="Select page size">
+          <option selected="selected" value="10">10</option>
+          <option value="20">20</option>
+          <option value="30">30</option>
+          <option value="40">40</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <script src="public/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+{
+  "extends": "tslint:recommended",
+  "rules": {
+    "quotemark":{
+      "options":"single"
+    },
+    "max-line-length": {
+      "options": 220
+    },
+    "no-new-object": true,
+    "prefer-const": true,
+    "no-const-assign": true,
+    "one-variable-per-declaration": false,
+    "object-literal-sort-keys": false,
+    "no-console": false,
+    "ordered-imports": false,
+    "no-consecutive-blank-lines": false,
+    "no-var-requires": false,
+    "no-empty-interface": false
+  },
+  "jsRules": {
+    "quotemark":{
+      "options":"single"
+    },
+    "max-line-length": {
+      "options": 220
+    },
+    "no-new-object": true,
+    "prefer-const": true,
+    "no-const-assign": true,
+    "one-variable-per-declaration": false,
+    "object-literal-sort-keys": false,
+    "no-console": false,
+    "ordered-imports": false,
+    "no-consecutive-blank-lines": false,
+    "no-var-requires": false,
+    "no-empty-interface": false
+  }
+}
