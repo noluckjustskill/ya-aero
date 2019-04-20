@@ -34,8 +34,8 @@ const show = (data, filter) => {
       if (!delayed && onlyDelayed) { return; }
 
       $('#schedule tbody').append(`<tr class="${flight.status === 'cancelled' ? 'red' : ''} ${delayed ? 'delayed' : ''}">
-        <td><h2>${time}</h2><h3>${date}</h3></td>
-        <td><h2>${dTime}</h2><h3>${dDate}</h3></td>
+        <td><h2>${time || ''}</h2><h3>${date !== 'Invalid Date' ? date : ''}</h3></td>
+        <td><h2>${dTime || ''}</h2><h3>${dDate !== 'Invalid Date' ? dDate : ''}</h3></td>
         <td>${typeDict[flight.type] || flight.type}</td>
         <td>${data.cities[flight.departure.iataCode] || flight.departure.iataCode}</td>
         <td><h2>${flight.flight.iataNumber}</h2><h3>${flight.airline.name}</h3></td>
