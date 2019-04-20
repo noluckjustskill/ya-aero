@@ -1,3 +1,7 @@
 # Yandex airport dashboard
 
-`npm install -D ts-node && npm install -D typescript && npm install -D nodemon`
+### Init and start app:
+```
+npm i
+npm start
+```
